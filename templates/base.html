@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>FlyBook | {% block title %}{% endblock %}</title>
+  <link rel="shortcut icon" href="/static/img/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Bootstrap -->
+  <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+  <link href="/static/css/flybook.css" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">FlyBook</a>
+      <ul class="nav">
+        <li class="active"><a href="#">Accueil</a></li>
+        <li><a href="#">Carnet</a></li>
+        <li><a href="#">Parcourir</a></li>
+      </ul>
+      <p class="navbar-text pull-right">shoudusse</p>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+</div>
+<!-- container -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
